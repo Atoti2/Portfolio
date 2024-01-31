@@ -1,23 +1,21 @@
 import Project from "../components/Project"
-const projektek = [
-    {
-        id: "1",
-        title: "Drums",
-        desc: "rovid leiras",
-        url: "https://i.ibb.co/ck1BkGY/drums.png"
-    },
-]
+import fetchData from "../assets/fetch"
+import { useState } from "react"
+
 
 const Projects = () => {
+    const [data, setData] = useState([])
+    fetchData(setData)
+
 
     return (
         <div className="Projects">
-            {projektek.map(project => (
+            {data.map(project => (
                 <Project
                     key={project.id}
-                    title={project.title}
-                    desc={project.desc}
-                    url={project.url}
+                    title={project.name}
+                    desc={project.descr}
+                    url={project.mainImg}
                 />
             ))}
         </div>
