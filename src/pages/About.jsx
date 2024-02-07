@@ -1,4 +1,3 @@
-
 import { motto, panelBackgrounds } from "../assets/motto"
 const About = () => {
     function toggleOpen(event){    
