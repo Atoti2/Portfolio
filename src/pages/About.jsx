@@ -2,10 +2,10 @@
 import { motto, panelBackgrounds } from "../assets/motto"
 const About = () => {
     function toggleOpen(event){    
-        if(!(event.target.classList.contains('flex-[5]'))){
-            document.querySelectorAll('.panel').forEach((item) => {item.classList.remove('flex-[5]')})
+        if(!(event.target.classList.contains('flex-[2]'))){
+            document.querySelectorAll('.panel').forEach((item) => {item.classList.remove('flex-[2]')})
         }
-        event.target.classList.toggle('flex-[5]')
+        event.target.classList.toggle('flex-[2]')
     }
 
     const ids = [1,2,3,4,5,6]
