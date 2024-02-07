@@ -1,12 +1,11 @@
 
 import { motto, panelBackgrounds } from "../assets/motto"
-import './About.css'
 const About = () => {
     function toggleOpen(event){    
-        if(!(event.target.classList.contains('open'))){
-            document.querySelectorAll('.panel').forEach((item) => {item.classList.remove('open')})
+        if(!(event.target.classList.contains('flex-[5]'))){
+            document.querySelectorAll('.panel').forEach((item) => {item.classList.remove('flex-[5]')})
         }
-        event.target.classList.toggle('open')
+        event.target.classList.toggle('flex-[5]')
     }
 
     const ids = [1,2,3,4,5,6]
@@ -24,7 +23,7 @@ const About = () => {
             <div className="min-h-screen flex">
             {list.map((data) => {
                 return(
-                    <div key={data.id} onClick={toggleOpen} className={`panel  flex-1 flex bg-cover bg-center items-center justify-center text-xl font-bold text-white uppercase`} style={{backgroundImage: `url(${data.images})`}} >{data.motto}</div>
+                    <div key={data.id} onClick={toggleOpen} className={`panel duration-500 ease-[cubic-bezier(.17,.67,.83,.67)] flex-1 flex bg-cover bg-center items-center justify-center text-xl font-bold text-white uppercase`} style={{backgroundImage: `url(${data.images})`}} >{data.motto}</div>
                 )
             })}
             </div>
