@@ -7,5 +7,7 @@
     .navTag{
         @apply hover:-translate-y-0.5 transition-all pb-2 hover:border-b-2 hover:border-b-black w-fit
     }
+
+    
     
 }
