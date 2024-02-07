@@ -2,13 +2,6 @@ import { useState } from "react"
 import { motto, panelBackgrounds } from "../assets/motto"
 import Panel from "../components/Panel"
 const About = () => {
-    // function toggleOpen(event){    
-    //     if(!(event.target.classList.contains('flex-[2]'))){
-    //         document.querySelectorAll('.panel').forEach((item) => {item.classList.remove('flex-[2]')})
-    //     }
-    //     event.target.classList.toggle('flex-[2]')
-    // }
-
     const [activeId, setActiveId] = useState(null)
     const ids = [1,2,3,4,5,6]
     const list = ids.map((id, index_value) => {

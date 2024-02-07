@@ -8,7 +8,6 @@ const Panel = ({motto, images, id, setActiveId, activeId}) => {
         setActive(!active)
         setActiveId(id)
     }
-
    return (
        <div  
         onClick={handleClick} 
