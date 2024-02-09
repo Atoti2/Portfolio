@@ -1,4 +1,4 @@
-import {createHashRouter, Route, Routes, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import {createHashRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
 //pages
 import Home from './pages/Home'
@@ -25,13 +25,7 @@ const router = createHashRouter(
 function App() {
   return (
     <>
-    <RootLayout/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="about" element={<About/>}/> 
-        <Route path="project" element={<Projects/>}/> 
-        <Route path='*' element={<NotFound/>}/>
-      </Routes>
+      <RouterProvider router={router}/>
     </>
 
   )

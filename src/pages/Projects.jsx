@@ -1,21 +1,20 @@
 import Project from "../components/Project"
 import fetchData from "../assets/fetch"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 const Projects = () => {
     const [data, setData] = useState([])
-    fetchData(setData)
-
-
+    useEffect(() => {
+        fetchData(setData)
+    }, [])
+    
     return (
-        <div className="Projects">
+        <div className="Projects flex gap-10 m-5">
             {data.map(project => (
                 <Project
                     key={project.id}
-                    title={project.name}
-                    desc={project.descr}
-                    url={project.mainImg}
+                    info={project}
                 />
             ))}
         </div>
