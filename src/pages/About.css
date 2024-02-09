@@ -1,7 +1,7 @@
 .panel{
     flex: 1;
-    transition: cubic-bezier(.17,.67,.83,.67)  0.5s ;
+    transition: cubic-bezier(.17,.67,.83,.67) 0.5s ;
 }
 .open{
-    flex: 5 !important;
+    flex: 2 !important;
 }
