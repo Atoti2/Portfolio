@@ -8,7 +8,8 @@ const Projects = () => {
     useEffect(() => {
         fetchData(setData)
     }, [])
-    
+    console.log(data)
+   
     return (
         <div className="Projects flex gap-10 m-5">
             {data.map(project => (

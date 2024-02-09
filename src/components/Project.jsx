@@ -1,7 +1,5 @@
 const Project = ({info}) => {
     const {name, descr, mainImg, gitHub } = info
-    console.log(info);
-
     return(
         <>
             <div className="hover:scale-105 transition-all h-80 w-80 bg-slate-100 rounded-md cursor-pointer" onClick={() => window.open(gitHub)}>
