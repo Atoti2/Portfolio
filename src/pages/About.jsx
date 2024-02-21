@@ -4,6 +4,7 @@ import Panel from "../components/Panel"
 const About = () => {
 
     const [activeId, setActiveId] = useState(null)
+    
     const ids = [1,2,3,4,5,6]
     const list = ids.map((id, index_value) => {
         return{
