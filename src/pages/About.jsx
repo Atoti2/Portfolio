@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { motto, panelBackgrounds } from "../assets/motto"
 import Panel from "../components/Panel"
+import {motion} from "framer-motion"
 const About = () => {
 
     const [activeId, setActiveId] = useState(null)
@@ -16,11 +17,15 @@ const About = () => {
 
     return (
         <>
-        <header>
+        <motion.header 
+         initial={{opacity: 0}}
+         animate= {{opacity: 1}}
+         exit={{opacity: 0}}
+        >
             <div className="min-h-screen flex">
             {list.map((data) => <Panel key={data.id} {...data} setActiveId = {setActiveId} activeId = {activeId}/>)}
             </div>
-        </header>
+        </motion.header >
         </>
     )
 }

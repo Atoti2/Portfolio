@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { NavLink, Outlet } from "react-router-dom"
+
 const RootLayout = () => {
 
     const [open, setOpen] = useState(false)
-
+  
     return (
         <>
             <div className="root-layout">
