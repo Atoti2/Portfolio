@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import logo from '../assets/profile_picture.png'
 import "./Home.css"
 import {motion} from "framer-motion"
 const Home = () => {
+    useEffect(() => {
+        document.title = "Portfólió | Főoldal"
+    }, [])
     return (
         <motion.main 
         initial={{opacity: 0}}

@@ -1,9 +1,11 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motto, panelBackgrounds } from "../assets/motto"
 import Panel from "../components/Panel"
 import {motion} from "framer-motion"
 const About = () => {
-
+    useEffect(() => {
+        document.title = "Portfólió | Rólam"
+    }, [])
     const [activeId, setActiveId] = useState(null)
     
     const ids = [1,2,3,4,5,6]

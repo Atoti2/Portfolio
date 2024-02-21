@@ -1,5 +1,9 @@
 import {motion} from "framer-motion"
+import { useEffect } from "react"
 const Contact = () => {
+    useEffect(() => {
+        document.title = "Portfólió | Elérhetőség"
+    }, [])
     return(
         <>  
             <motion.div

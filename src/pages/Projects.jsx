@@ -2,12 +2,16 @@ import Project from "../components/Project"
 import fetchData from "../assets/fetch"
 import { useEffect, useState } from "react"
 import {motion} from "framer-motion"
+
 const Projects = () => {
+    useEffect(() => {
+        document.title = "Portfólió | Projektek"
+    }, [])
     const [data, setData] = useState([])
     useEffect(() => {
         fetchData(setData)
     }, [])
-    console.log(data);
+
     return (
         <motion.div
         initial={{opacity: 0}}
