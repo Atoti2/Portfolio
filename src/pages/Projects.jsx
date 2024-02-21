@@ -2,7 +2,6 @@ import Project from "../components/Project"
 import fetchData from "../assets/fetch"
 import { useEffect, useState } from "react"
 
-
 const Projects = () => {
     const [data, setData] = useState([])
     useEffect(() => {
@@ -16,10 +15,9 @@ const Projects = () => {
                     key={project.id}
                     info={project}
                 />
-            ))}
+            ))}         
         </div>
     )
 }
-
 
 export default Projects

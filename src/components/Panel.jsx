@@ -8,14 +8,15 @@ const Panel = ({motto, images, id, setActiveId, activeId}) => {
         setActive(!active)
         setActiveId(id)
     }
-   return (
+
+    return (
        <div  
         onClick={handleClick} 
         className={`${id == activeId && !active ? 'panel isActive ' : 'panel'}`} 
         style={{backgroundImage: `url(${images})`}} >
             {motto}
         </div>
-  )
+    )
 }
 
 export default Panel

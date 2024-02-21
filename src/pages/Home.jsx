@@ -1,10 +1,11 @@
 import logo from '../assets/profile_picture.png'
+import "./Home.css"
 const Home = () => {
     return (
         <main>
         <div id="aboutMe" className="flex flex-col sm:flex-row items-center justify-center min-h-[88vh]">
             <div className="mb-5 ml-5">
-                <img className="bg-rose-500 " src={logo} alt="picture of me"/>
+                <img className="bg-rose-500 profilePicture" src={logo} alt="picture of me"/>
             </div>
     
             <div className="flex flex-col items-center justify-center m-auto">
