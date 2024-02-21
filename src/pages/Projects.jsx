@@ -9,7 +9,7 @@ const Projects = () => {
     }, [])
    
     return (
-        <div className="Projects flex gap-10 m-5">
+        <div className="Projects flex flex-col md:flex-row gap-10 m-5">
             {data.map(project => (
                 <Project
                     key={project.id}

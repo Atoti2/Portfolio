@@ -10,6 +10,7 @@ const RootLayout = () => {
               <li className='navTag'><NavLink to="/">&#60;Kezdőlap/&#62;</NavLink></li>
               <li className='navTag'><NavLink to="about">&#60;Rólam/&#62;</NavLink></li>
               <li className='navTag'><NavLink to="project">&#60;Projektek/&#62;</NavLink></li>
+              <li className='navTag'><NavLink to="contact">&#60;Elérhetőség/&#62;</NavLink></li>
             </ul>
           </div>
         </nav>

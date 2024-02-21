@@ -8,7 +8,7 @@ import About from './pages/About'
 import RootLayout from './layouts/RootLayout'
 import NotFound from './pages/NotFound'
 import Projects from './pages/Projects'
-
+import Contact from './pages/Contact'
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="about" element={<About/>}/> 
         <Route path="project" element={<Projects/>}/> 
+        <Route path="contact" element={<Contact/>}/> 
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </>
